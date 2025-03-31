@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Bebas', sans-serif;
+}
+
+p {
+    text-align: center;
+}
+img {
+    border-color: black;
+    border-radius: 10px;
+    display: block;  /* Faz a imagem ser um bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
+    max-width: 100%;
+    height: auto;
+} 
+
+/* A classe container, sim, recebe o fundo branco */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: black;
+
+    /* Adiciona margem-top para não ficar embaixo da navbar */
+    margin-top: 80px;
+    text-align: center; /* Se quiser manter o texto centralizado */
+}
+
+h1 {
+    font-family: 'Bebas', sans-serif;
+    font-size: 50px;
+    
+}
+h2 {
+    font-size: 30px;
+}
+ h3 {
+    font-family: 'roboto', sans-serif;;
+ }
+
+/* Barra de navegação */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.26); /* Transparente */
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    z-index: 999; /* Garante que a navbar fique acima dos outros elementos */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-family:'Bebas', sans-serif;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+ footer {
+    box-shadow: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Bebas', sans-serif;
+ }
+ .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 30px; /* Ajuste conforme necessário */
+    margin-right: 40px; /* Espaço entre a logo e o texto */
+}
+table {
+margin: auto;
+text-align: center;
+border-collapse: collapse;
+width: 70%;
+}
+th, td {
+    border: 2px solid #000; /* Adiciona bordas às células */
+    padding: 15px 20px; /* Adiciona espaçamento interno */
+}
+th {
+    background-color: #f2f2f2; /* Cor de fundo para os cabeçalhos */
+}
+td:first-child {
+    width: 30%; /* Define a largura da coluna "Categoria" */
+    font-weight: bold; /* Deixa os títulos das categorias em negrito */
+}
+td:last-child {
+    width: 70%; /* Define a largura da coluna "Descrição" */
+}
+blockquote {
+    font-style: italic;
+    border-left: 0px solid #007BFF;
+    padding-left: 1px;
+    color: #333;
+    text-align: center;
+}
